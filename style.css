@@ -1,0 +1,301 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color:#FAAABB;
+  color:#783c00;
+  font-family: Candara, Helvetica, sans-serif;
+  margin:0;
+  padding: 15px 50px 50px 50px;
+}
+
+h1, h2{
+  margin:0;
+}
+
+header  h1 {
+    font-size: 3rem;
+    user-select: none;
+    }
+
+#logo{
+  display: flex;
+  justify-content: center;
+  padding:10px;
+}
+
+
+#logoimage{
+padding-right:10px;
+pointer-events: none;
+width:100px;
+height:100px;
+}
+
+.menu{
+  background-color:#783c00;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding:5px;
+  }
+
+  .menu a{
+display: block;
+text-align: center;
+padding: 10px;
+color: #FAAABB;
+text-decoration: none;
+transition: background-color 0.3s;
+}
+
+.menu > a:hover{
+  background-color: white;
+  color: #783c00;
+}
+
+.coluna-esquerda{
+  float: left;
+  width:75%;
+}
+
+.coluna-direita{
+  float: right;
+  width:25%;
+  padding-left:20px;
+}
+
+.card{
+  background-color: #ffe6e6;
+  padding:10px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  font-size: 17px;
+  grid-gap:-20px;
+}
+
+.grid img{
+  height:150px;
+  border-radius:50%;
+  border:2px solid #783c00;
+  margin: 10px;
+  margin-top: 10px;
+}
+
+.minigrid{
+  height:370px;
+  overflow: auto;
+  padding:15px;
+  margin-bottom: 10px;
+}
+
+.produto{
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  border-radius:5px;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  }
+
+  .produto:hover{
+   box-shadow: 2px 2px 10px #888888;
+ }
+
+#encomenda{
+  height: 185px;
+  background-image: url('images/trufachoco2.jpg');
+  background-size: 100%;
+  color: #000000;
+  font-size: 1.2vw;
+  position: relative;
+  text-shadow: 0px 0px 4px #FAAABB;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  font-weight:bold;
+}
+
+#encomenda:hover{
+   box-shadow: 2px 2px 10px #888888;
+ }
+
+ #Sabor{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+#manda{
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+
+}
+
+#tabela{
+   background-color: #FAAABB;
+  padding:10px;
+  margin-top:5px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#tabela{
+  text-align: center;
+  height: 185px;
+  background-size: 100%;
+  color: #000000;
+  font-size: 1.2vw;
+  position: relative;
+  text-shadow: 0px 0px 4px #FAAABB;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  font-weight:bold;
+  }
+
+#tabela:hover{
+   box-shadow: 2px 2px 10px #888888;
+ }
+
+ #promo{
+   text-align:center;
+   font-weight:bold;
+   font-size: 1,5rem;
+ }
+
+ .sobreimg{
+  height:95px;
+  border-radius:50%;
+  margin:10px;
+  box-shadow: 0px 0px 5px #888888;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.sobreimg:hover{
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.sobreitem{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobretexto a {
+  color:#FAAABB;
+}
+
+.lastCard{
+  margin-bottom: 120px;
+}
+
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.social img{
+  margin: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.social img:hover{
+  opacity: 0.5;
+}
+
+#entrega{
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  height:100px;
+  width:300px;
+}
+
+#entrega img{
+  position: absolute;
+  right:10px;
+  width: 75px;
+  border-radius:50%;
+}
+
+#tel{
+  position:absolute;
+  height:60px;
+  background-color:#783c00;
+  color:white;
+  margin-top:10px;
+  padding:10px;
+  left:16px;
+  border-radius:16px;
+  opacity:0;
+  transition: opacity 0.3s;
+  }
+
+#entrega img:hover + #tel{
+ opacity:1;
+}
+
+  #tel p{
+    margin:0;
+  }
+
+  @media screen and (max-width:800px) {
+
+.coluna-esquerda{
+  width:100%;
+}
+
+.coluna-direita{
+  width:100%;
+  padding:0;
+}
+
+header  h1 {
+    font-size: 3rem;
+    }
+
+#logoimage{
+width:95px;
+}
+
+
+#encomenda{
+  font-size: 4vw;
+  margin-top:0;
+}
+
+#tabela{
+  font-size:4vw;
+}
+  
+.body{
+    padding: 5px 25px 25px 25px;
+  }
+}
+
+@media screen and (max-width:450px) {
+
+  .body{
+    padding:0;
+  }
+
+  .menu{
+    display:block;
+  }
+
+}
